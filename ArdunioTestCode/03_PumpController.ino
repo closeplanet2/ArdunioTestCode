@@ -3,50 +3,42 @@ void TriggerPump(int pump){
   switch (pump) {
     case 1:
       servoOne.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
+      servoTwo.write(90);
       delay(1000);
       servoOne.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
+      servoTwo.write(0);
       delay(1000);
       break;
     case 2:
-      servoTwo.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
+      servoThree.write(90);
+      servoFour.write(90);
       delay(1000);
-      servoTwo.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
+      servoThree.write(0);
+      servoFour.write(0);
       delay(1000);
       break;
     case 3:
-      servoThree.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
+      servoFive.write(90);
+      servoSix.write(90);
       delay(1000);
-      servoThree.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
+      servoFive.write(0);
+      servoSix.write(0);
       delay(1000);
       break;
     case 4:
-      servoFour.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
+      servoSeven.write(90);
+      servoEight.write(90);
       delay(1000);
-      servoFour.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
+      servoSeven.write(0);
+      servoEight.write(0);
       delay(1000);
       break;
     case 5:
-      servoFive.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
+      servoNine.write(90);
+      servoTen.write(90);
       delay(1000);
-      servoFive.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
-      delay(1000);
-      break;
-    case 6:
-      servoSix.write(90);
-      Serial.print(String(pump) + " pump has opened" + '\n');
-      delay(1000);
-      servoSix.write(0);
-      Serial.print(String(pump) + " pump has closed" + '\n');
+      servoNine.write(0);
+      servoTen.write(0);
       delay(1000);
       break;
   }
