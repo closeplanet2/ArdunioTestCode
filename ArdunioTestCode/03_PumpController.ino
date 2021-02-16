@@ -1,6 +1,6 @@
 void TriggerPump(int number){
   Servo servo;
-  switch (var) {
+  switch (number) {
     case 1:
       servoOne.write(90);
       delay(2000);

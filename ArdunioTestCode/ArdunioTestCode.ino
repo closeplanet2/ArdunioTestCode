@@ -12,7 +12,9 @@ Servo servoFour;
 Servo servoFive;
 Servo servoSix;
 
-int distanceList[] = {100,80,60,40,20,0,0};
+int distanceList[] = {24.6,20.5,16.5,12.5,8.5,4.5};
+int offsetDistance = 1;
+
 int currentPump = -1;
-int currentDistance = 0;
+int currentDistance = -1;
 int distance =0;
