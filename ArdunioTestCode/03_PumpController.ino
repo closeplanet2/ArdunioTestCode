@@ -2,28 +2,46 @@ void TriggerPump(int number){
   Servo servo;
   switch (var) {
     case 1:
-      servo = servoOne;
+      servoOne.write(90);
+      delay(2000);
+      servoOne.write(0);
+      delay(2000);
+      servoOne.write(90);
       break;
     case 2:
-      servo = servoTwo;
+      servoTwo.write(90);
+      delay(2000);
+      servoTwo.write(0);
+      delay(2000);
+      servoTwo.write(90);
       break;
     case 3:
-      servo = servoThree;
+      servoThree.write(90);
+      delay(2000);
+      servoThree.write(0);
+      delay(2000);
+      servoThree.write(90);
       break;
     case 4:
-      servo = servoFour;
+      servoFour.write(90);
+      delay(2000);
+      servoFour.write(0);
+      delay(2000);
+      servoFour.write(90);
       break;
     case 5:
-      servo = servoFive;
+      servoFive.write(90);
+      delay(2000);
+      servoFive.write(0);
+      delay(2000);
+      servoFive.write(90);
       break;
     case 6:
-      servo = servoSix;
+      servoSix.write(90);
+      delay(2000);
+      servoSix.write(0);
+      delay(2000);
+      servoSix.write(90);
       break;
   }
-
-  servo.write(90);
-  delay(2000);
-  servo.write(0);
-  delay(2000);
-  servo.write(90);
 }
