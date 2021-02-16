@@ -13,7 +13,7 @@ Servo servoFive;
 Servo servoSix;
 
 int distanceList[] = {24.6,20.5,16.5,12.5,8.5,4.5};
-int offsetDistance = 1;
+int offsetDistance = 5;
 
 int currentPump = -1;
 int currentDistance = -1;

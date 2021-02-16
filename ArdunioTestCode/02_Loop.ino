@@ -25,7 +25,7 @@ int getDistance(){
 
 void IsPumpUnderNosel(int distance, int pump){
   int min = currentDistance - offsetDistance;
-  int max = currentDistance + offsetdistance;
+  int max = currentDistance + offsetDistance;
 
   if(distance > min && distance < max){
     currentPump = -1;
