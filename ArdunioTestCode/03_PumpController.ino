@@ -1,4 +1,5 @@
 void TriggerPump(int number){
+  Serial.print(String(number) + " pump has been fired" + '\n');
   Servo servo;
   switch (number) {
     case 1:
@@ -33,3 +34,5 @@ void TriggerPump(int number){
       break;
   }
 }
+
+//s
