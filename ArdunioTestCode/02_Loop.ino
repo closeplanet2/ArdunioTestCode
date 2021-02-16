@@ -28,13 +28,7 @@ void IsPumpUnderNosel(int distance, int pump){
   int max = currentDistance + offsetDistance;
 
   if(distance > min && distance < max){
-    //TriggerPump(pump);
-    servoOne.write(90);
-    Serial.print(String(number) + " pump has opened" + '\n');
-    delay(1000);
-    servoOne.write(0);
-    Serial.print(String(number) + " pump has closed" + '\n');
-    delay(1000);
+    TriggerPump(pump);
   }
 }
 
