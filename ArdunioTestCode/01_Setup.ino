@@ -10,10 +10,9 @@ void setup() {
   servoFive.attach(47);
   servoSix.attach(46);
   
-if (distanceSensor.begin() != 0) //Begin returns 0 on a good init
-  {
+  if (distanceSensor.begin() != 0){
       Serial.print("Failed to load");
     while (1);
-}
-distanceSensor.setDistanceModeLong();
+  }
+  distanceSensor.setDistanceModeLong();
 }
