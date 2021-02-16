@@ -1,8 +1,8 @@
 void loop() {
   getDistance();
-  Serial.print(String(distance)+ '\n');
   if(currentPump != -1){
     currentDistance = distanceList[currentPump-1];
+    Serial.print(String(distance) + "/" + String(currentDistance)+ '\n');
     IsPumpUnderNosel(distance, currentPump);
   }else{
     currentDistance = -1;
