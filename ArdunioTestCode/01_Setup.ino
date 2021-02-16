@@ -15,4 +15,6 @@ void setup() {
     while (1);
   }
   distanceSensor.setDistanceModeLong();
+  delay(1000);
+  TriggerPump(1);
 }
