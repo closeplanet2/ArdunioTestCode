@@ -1,6 +1,6 @@
 void TriggerPump(int pump){
   Servo servo;
-  switch (number) {
+  switch (pump) {
     case 1:
       servoOne.write(90);
       Serial.print(String(pump) + " pump has opened" + '\n');
