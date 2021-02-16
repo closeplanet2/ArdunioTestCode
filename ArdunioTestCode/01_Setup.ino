@@ -1,10 +1,10 @@
 void setup() {
   Serial.begin(9600);
   
-  servoOne.attach(30);
-  servoTwo.attach(31);
-  servoThree.attach(32);
-  servoFour.attach(33);
-  servoFive.attach(34);
-  servoSix.attach(35);
+  servoOne.attach(51);
+  servoTwo.attach(50);
+  servoThree.attach(49);
+  servoFour.attach(48);
+  servoFive.attach(47);
+  servoSix.attach(46);
 }
