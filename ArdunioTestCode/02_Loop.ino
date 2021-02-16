@@ -30,6 +30,7 @@ void IsPumpUnderNosel(int distance, int pump){
   if(distance > min && distance < max){
     currentPump = -1;
     TriggerPump(pump);
+    delay(2000);
   }
 }
 
