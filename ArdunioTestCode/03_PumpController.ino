@@ -1,3 +1,3 @@
-void TriggerPump(number){
+void TriggerPump(int number){
   
 }
