@@ -15,4 +15,5 @@ if (distanceSensor.begin() != 0) //Begin returns 0 on a good init
       Serial.print("Failed to load");
     while (1);
 }
+distanceSensor.setDistanceModeLong();
 }
